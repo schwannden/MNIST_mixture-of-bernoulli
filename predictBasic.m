@@ -39,4 +39,4 @@ for i = 1:testCount
         correctCount = correctCount + 1;
     end
 end
-100*correctCount/testCount
+sprintf ('prediction accuracy: %d', 100*correctCount/testCount)
