@@ -42,5 +42,6 @@ while (1)
     mu = mu_new;
     pi = pi_new;
 end
-save ('trainedPara.mat')
+outfile = strcat ('trainedPara', num2str(K), '.mat');
+save (outfile, 'mu', 'pi');
 ShowModel(mu, pi, 5, 8, 1:K);

@@ -3,13 +3,13 @@ addpath('./utils');
 [train, test] = DataPrep('./data');
 
 disp('initializing data');
-load('trainedPara.mat');
+load('trainedPara40.mat');
 D = 400; %% dimension of each multinomial distribution (same as the number of pixels in each image)
 K = size (mu, 2);  %% number of motinomial distributions
 
 classCount = zeros (10, 1);
 N = 50000;
-if 0
+if 1
 m = zeros (K, 10);
 disp('training parameters');
 for i=1:D

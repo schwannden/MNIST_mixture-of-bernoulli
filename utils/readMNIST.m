@@ -1,4 +1,5 @@
 % readMNIST by Siddharth Hegde
+% optimized by Schwannden Kuo by about 15x
 %
 % Description:
 % Read digits and labels from raw MNIST data files
